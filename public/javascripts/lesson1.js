@@ -58,7 +58,8 @@ const SystemChart = {
     onConnection: (instance, callback) => {
         instance.bind("connection", function (info) {
             let isCorrect = callback();
-            info.connection.getOverlay("label").setLabel("" + isCorrect);
+            info.connection.getOverlay("label").setLabel(isCorrect ? "Correct" : "Wrong");
+            info.connection.getOverlay("label").addClass(isCorrect ? "alert alert-success" : "alert alert-danger");
 
             //info.connection.getOverlay("label").setLabel(info.connection.id + "DONEm");
         });
