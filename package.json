@@ -1,0 +1,16 @@
+{
+  "name": "hamsys",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@jsplumb/community": "^4.0.0-RC20",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "jsplumb": "^2.15.2",
+    "morgan": "~1.9.1"
+  }
+}
